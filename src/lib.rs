@@ -83,6 +83,10 @@ extern crate serde;
 
 use serde::{Deserialize, Serialize};
 
+pub use nothing::Nothing;
+
+mod nothing;
+
 /// HTTP request methods used in Matrix APIs.
 #[derive(Clone, Copy, Debug)]
 pub enum Method {
